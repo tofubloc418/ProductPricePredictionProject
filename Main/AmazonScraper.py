@@ -29,13 +29,7 @@ def get_product_asins(driver, department, product_asins, amount):
     wait = WebDriverWait(driver, 5)
 
     print("Opening " + department)
-    # Gets first amount number of elements of available products
 
-    # (ActionChains(driver)
-    #  .key_down(Keys.CONTROL)
-    #  .click(department)
-    #  .key_up(Keys.CONTROL)
-    #  .perform())
     driver.get(department)
 
     for attempt2 in range(2):
@@ -80,9 +74,7 @@ def compile_product_urls(driver):
 
     departments = get_departments(driver)
     time.sleep(2)
-    # base_window = driver.current_window_handle
     for department in departments:
-        # driver.switch_to.window(base_window)
         new_asins = get_product_asins(driver, department, product_asins, 11)
         for asin in new_asins:
             product_asins.append(asin)
