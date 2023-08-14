@@ -79,13 +79,13 @@ def get_single_product_data(driver, link):
     # Graph info
     time.sleep(2)
     graph = wait.until(ec.presence_of_element_located((By.CSS_SELECTOR, 'canvas.flot-overlay')))
+    width = graph.size['width']
     name, rating, reviews = parse_product_name(wait)
 
     # Set range to YEAR or ALL
     click_all_range(driver)
 
     # Move to right most part of graph
-    width = graph.size['width']
     action.move_to_element_with_offset(graph, width / 2 - 6, 0).perform()
     # TESTER
     # action.move_to_element_with_offset(graph, -500, 0).perform()
