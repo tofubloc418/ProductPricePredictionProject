@@ -17,8 +17,13 @@ def activate_driver():
 def run():
     driver = activate_driver()
     driver.maximize_window()
-    product_links = AmazonScraper.compile_product_urls(driver)
-    existing_df = pd.read_csv(r'C:\Users\Brandon\PycharmProjects\Webscraper\Data\data.csv', index_col=0)
+    try:
+        product_links = AmazonScraper.compile_product_urls(driver)
+    except TimeoutException:
+        driver.refresh()
+        product_links = AmazonScraper.compile_product_urls(driver)
+
+    existing_df = pd.read_csv(r'C:\Users\Brandon\PycharmProjects\AmazonKeepaScraper\Data\data.csv', index_col=0)
     existing_links = existing_df["Link"].unique()
 
     total_products = len(product_links)
@@ -30,11 +35,11 @@ def run():
         if link not in existing_links:
             try:
                 df = KeepaScraper.get_single_product_data_df(driver, link, department)
-                df.to_csv(r'C:\Users\Brandon\PycharmProjects\Webscraper\Data\data.csv'
+                df.to_csv(r'C:\Users\Brandon\PycharmProjects\AmazonKeepaScraper\Data\data.csv'
                           , mode='a', index=False, header=False)
 
                 products_finished_count += 1
-                print(str(products_finished_count) + ' / ' + str(total_products) + "completed!")
+                print(str(products_finished_count) + ' / ' + str(total_products) + " completed!")
 
                 time.sleep(1)
             except TimeoutException:
@@ -43,4 +48,11 @@ def run():
     driver.quit()
 
 
+def test_run():
+    driver = activate_driver()
+    driver.maximize_window()
+    KeepaScraper.get_single_product_data_df(driver, 'https://keepa.com/#!product/1-B08C1W5N87', 'test')
+
+
 run()
+# test_run()

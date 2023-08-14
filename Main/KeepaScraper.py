@@ -7,9 +7,13 @@ import datetime as dt
 import pandas as pd
 import time
 
+year = 2023
+previous_date = dt.datetime.today()
 
-def parse_date(s_date, data_points_collected):
-    year = '2023'
+
+def parse_date(s_date):
+    global year
+    global previous_date
     date_split = s_date.split(' ')
     day_of_week = date_split[0]
     month = date_split[1]
@@ -19,13 +23,15 @@ def parse_date(s_date, data_points_collected):
         day = '0' + day
     if len(time) < 5:
         time = '0' + time
-    s_date = day_of_week + ' ' + month + ' ' + day + ', ' + year + ' ' + time
-    date = dt.datetime.strptime(s_date, '%a, %b %d, %Y %H:%M').date()
-    if date >= dt.date.today() and data_points_collected > 10:
-        year = '2022'
-        s_date = day_of_week + ' ' + month + ' ' + day + ', ' + year + ' ' + time
-    date = dt.datetime.strptime(s_date, '%a, %b %d, %Y %H:%M')
 
+    s_date = day_of_week + ' ' + month + ' ' + day + ', ' + str(year) + ' ' + time
+    date = dt.datetime.strptime(s_date, '%a, %b %d, %Y %H:%M')
+    if date > previous_date:
+        year -= 1
+        s_date = day_of_week + ' ' + month + ' ' + day + ', ' + str(year) + ' ' + time
+        date = dt.datetime.strptime(s_date, '%a, %b %d, %Y %H:%M')
+
+    previous_date = date
     return date
 
 
@@ -40,72 +46,96 @@ def click_useless_lines(driver):
     warehouse.click()
 
 
-def check_click_year(driver):
-    try:
-        # Try for YEAR
-        graph_range = driver.find_element(By.CSS_SELECTOR, 'td[range="8760"]')
-    except NoSuchElementException:
-        # Go for ALL
-        graph_range = driver.find_elements(By.CSS_SELECTOR, '.legendRange')[-1]
-        graph_range.click()
+def click_all_range(driver):
+    graph_range = driver.find_elements(By.CSS_SELECTOR, '.legendRange')[-1]
     graph_range.click()
+
+
+def parse_product_name(wait):
+    unmodified_name = (wait.until(ec.presence_of_element_located((By.CLASS_NAME, 'productTableDescriptionTitle'))).text
+                       .replace("  ", " | ").replace(" ", " | "))
+    name_parts = unmodified_name.split(' | ', 2)
+    name = name_parts[0]
+    print(name)
+    rating = float(name_parts[1])
+    s_reviews = ''
+    for char in name_parts[2]:
+        if char.isdigit():
+            s_reviews += str(char)
+    reviews = int(s_reviews)
+    return name, rating, reviews
 
 
 def get_single_product_data(driver, link):
     # TEMPORARY DATA STORAGE
-    data = [[], [], [], []]
+    data = [[], [], [], [], [], [], [], []]
     data_points_collected = 0
 
     # Open KEEPA page
     driver.get(link)
-    wait = WebDriverWait(driver, 20)
+    wait = WebDriverWait(driver, 10)
     action = webdriver.ActionChains(driver)
 
     # Graph info
     time.sleep(2)
     graph = wait.until(ec.presence_of_element_located((By.CSS_SELECTOR, 'canvas.flot-overlay')))
-    name = (wait.until(ec.presence_of_element_located((By.CLASS_NAME, 'productTableDescriptionTitle'))).text
-            .replace("  ", " | ").replace(" ", " | "))
-
-    print(name)
-    width = graph.size['width']
+    name, rating, reviews = parse_product_name(wait)
 
     # Set range to YEAR or ALL
-    check_click_year(driver)
+    click_all_range(driver)
 
     # Move to right most part of graph
+    width = graph.size['width']
     action.move_to_element_with_offset(graph, width / 2 - 6, 0).perform()
     # TESTER
     # action.move_to_element_with_offset(graph, -500, 0).perform()
 
+    wait = WebDriverWait(driver, 10)
     # Set pace of cursor movement
     pace = -1
     while True:
         # Get the date
-        s_date = driver.find_elements(By.ID, 'flotTipDate')[0].text
+        s_date = wait.until(ec.presence_of_element_located((By.ID, 'flotTipDate'))).text
 
         # Split the date | Make day of month have 2 digits | Add year
         if s_date:
-            date = parse_date(s_date, data_points_collected)
+            date = parse_date(s_date)
             s_date = dt.datetime.strftime(date, '%a, %b %d, %Y %H:%M')
         else:
             break
 
         # Get the price
-        s_price = driver.find_element(By.ID, 'flotTip1').text
+        try:
+            s_new_price = driver.find_element(By.ID, 'flotTip1').text
+            new_price = float(s_new_price.split('$ ')[1]) if '$' in s_new_price else None
+        except NoSuchElementException:
+            new_price = None
 
-        # Split the price | Remove extra stuff
-        price = float(s_price.split('$ ')[1]) if '$' in s_price else None
+        try:
+            s_amazon_price = driver.find_element(By.ID, 'flotTip0').text
+            amazon_price = float(s_amazon_price.split('$ ')[1]) if '$' in s_amazon_price else None
+        except NoSuchElementException:
+            amazon_price = None
+
+        try:
+            s_used_price = driver.find_element(By.ID, 'flotTip2').text
+            used_price = float(s_used_price.split('$ ')[1]) if '$' in s_used_price else None
+        except NoSuchElementException:
+            used_price = None
 
         # Add name, date, price to list
-        if date in data[1] or price is None:
+        if date in data[1]:
             pass
         else:
             data[0].append(name)
-            data[1].append(link)
-            data[2].append(date)
-            data[3].append(price)
-            print(s_date + ' | ' + str(price))
+            data[1].append(rating)
+            data[2].append(reviews)
+            data[3].append(link)
+            data[4].append(date)
+            data[5].append(new_price)
+            data[6].append(amazon_price)
+            data[7].append(used_price)
+            print(s_date + ' | ' + str(new_price) + " | " + str(amazon_price) + " | " + str(used_price))
             data_points_collected += 1
 
         # Move cursor left
@@ -116,12 +146,23 @@ def get_single_product_data(driver, link):
 
 
 def convert_to_df(department, data):
-    df = pd.DataFrame({"Product Name": data[0], "Department": department, "Link": data[1], "Date": data[2], "Price": data[3]})
+    df = pd.DataFrame({"Product Name": data[0],
+                       "Rating": data[1],
+                       "# of Reviews": data[2],
+                       "Department": department,
+                       "Link": data[3],
+                       "Date": data[4],
+                       "$ New": data[5],
+                       "$ Amazon": data[6],
+                       "$ Used": data[7]})
     return df
 
 
 def get_single_product_data_df(driver, link, department):
-
+    global year
+    global previous_date
+    year = 2023
+    previous_date = dt.datetime.today()
     data = get_single_product_data(driver, link)
     df = convert_to_df(department, data)
     return df
