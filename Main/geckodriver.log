@@ -12362,3 +12362,443 @@ t.emit@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs
 D@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0:234:5625
 D/<@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0:234:686
 
+1691985874260	geckodriver	INFO	Listening on 127.0.0.1:61551
+1691985877371	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "6155 ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Brandon\\AppData\\Local\\Temp\\rust_mozprofilejw8oyO"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691985877645	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691985877714	Marionette	INFO	Listening on port 61560
+WebDriver BiDi listening on ws://127.0.0.1:61552
+Read port: 61560
+1691985877931	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:61552/devtools/browser/8a533756-935b-43bb-b137-e9b9c315f293
+JavaScript warning: https://www.amazon.com/Best-Sellers/zgbs line 2483 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers/zgbs, line 2523: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Amazon-Devices-Accessories/zgbs/amazon-devices/ref=zg_bs_nav_0 line 2367 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Amazon-Devices-Accessories/zgbs/amazon-devices/ref=zg_bs_nav_0, line 2407: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_0 line 2319 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_0, line 2359: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Apps-Games/zgbs/mobile-apps/ref=zg_bs_nav_0 line 2323 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Apps-Games/zgbs/mobile-apps/ref=zg_bs_nav_0, line 2363: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0 line 2297 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0, line 2337: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0 line 2365 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0, line 2405: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_0 line 2356 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_0, line 2396: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_0 line 2406 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_0, line 2446: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_0 line 2395 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_0, line 2435: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_0 line 2403 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_0, line 2443: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-books-Amazon/zgbs/books/ref=zg_bs_nav_0 line 2366 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-books-Amazon/zgbs/books/ref=zg_bs_nav_0, line 2406: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/ref=zg_bs_nav_0 line 2382 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/ref=zg_bs_nav_0, line 2422: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-music-albums/zgbs/music/ref=zg_bs_nav_0 line 2352 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-music-albums/zgbs/music/ref=zg_bs_nav_0, line 2392: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Cell-Phones-Accessories/zgbs/wireless/ref=zg_bs_nav_0 line 2343 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Cell-Phones-Accessories/zgbs/wireless/ref=zg_bs_nav_0, line 2383: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Climate-Pledge-Friendly/zgbs/climate-pledge/ref=zg_bs_nav_0 line 2257 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Climate-Pledge-Friendly/zgbs/climate-pledge/ref=zg_bs_nav_0, line 2297: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Clothing-Shoes-Jewelry/zgbs/fashion/ref=zg_bs_nav_0 line 2257 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Clothing-Shoes-Jewelry/zgbs/fashion/ref=zg_bs_nav_0, line 2297: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Collectible-Coins/zgbs/coins/ref=zg_bs_nav_0 line 2302 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Collectible-Coins/zgbs/coins/ref=zg_bs_nav_0, line 2342: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Computers-Accessories/zgbs/pc/ref=zg_bs_nav_0 line 2349 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Computers-Accessories/zgbs/pc/ref=zg_bs_nav_0, line 2389: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0 line 2257 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0, line 2297: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0 line 2257 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0, line 2297: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0 line 2257 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0, line 2297: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0 line 2501 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0, line 2541: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0 line 2501 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0, line 2541: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0 line 2501 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0, line 2541: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/ref=zg_bs_nav_0 line 2398 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/ref=zg_bs_nav_0, line 2438: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Entertainment-Collectibles/zgbs/entertainment-collectibles/ref=zg_bs_nav_0 line 2320 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Entertainment-Collectibles/zgbs/entertainment-collectibles/ref=zg_bs_nav_0, line 2360: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Gift-Cards/zgbs/gift-cards/ref=zg_bs_nav_0 line 2365 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Gift-Cards/zgbs/gift-cards/ref=zg_bs_nav_0, line 2405: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Grocery-Gourmet-Food/zgbs/grocery/ref=zg_bs_nav_0 line 2369 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Grocery-Gourmet-Food/zgbs/grocery/ref=zg_bs_nav_0, line 2409: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Handmade-Products/zgbs/handmade/ref=zg_bs_nav_0 line 2384 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Handmade-Products/zgbs/handmade/ref=zg_bs_nav_0, line 2424: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Health-Household/zgbs/hpc/ref=zg_bs_nav_0 line 2359 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Health-Household/zgbs/hpc/ref=zg_bs_nav_0, line 2399: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0 line 2361 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0, line 2401: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Industrial-Scientific/zgbs/industrial/ref=zg_bs_nav_0 line 2375 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Industrial-Scientific/zgbs/industrial/ref=zg_bs_nav_0, line 2415: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Kindle-Store/zgbs/digital-text/ref=zg_bs_nav_0 line 2377 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Kindle-Store/zgbs/digital-text/ref=zg_bs_nav_0, line 2417: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Kitchen-Dining/zgbs/kitchen/ref=zg_bs_nav_0 line 2361 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Kitchen-Dining/zgbs/kitchen/ref=zg_bs_nav_0, line 2401: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Magazine-Subscriptions/zgbs/magazines/ref=zg_bs_nav_0 line 2327 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Magazine-Subscriptions/zgbs/magazines/ref=zg_bs_nav_0, line 2367: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-movies-TV-DVD-Blu-ray/zgbs/movies-tv/ref=zg_bs_nav_0 line 2359 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-movies-TV-DVD-Blu-ray/zgbs/movies-tv/ref=zg_bs_nav_0, line 2399: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Musical-Instruments/zgbs/musical-instruments/ref=zg_bs_nav_0 line 2379 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Musical-Instruments/zgbs/musical-instruments/ref=zg_bs_nav_0, line 2419: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Office-Products/zgbs/office-products/ref=zg_bs_nav_0 line 2313 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Office-Products/zgbs/office-products/ref=zg_bs_nav_0, line 2353: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden/zgbs/lawn-garden/ref=zg_bs_nav_0 line 2361 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden/zgbs/lawn-garden/ref=zg_bs_nav_0, line 2401: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/ref=zg_bs_nav_0 line 2381 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/ref=zg_bs_nav_0, line 2421: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-software/zgbs/software/ref=zg_bs_nav_0 line 2352 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-software/zgbs/software/ref=zg_bs_nav_0, line 2392: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods/ref=zg_bs_nav_0 line 2366 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods/ref=zg_bs_nav_0, line 2406: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Sports-Collectibles/zgbs/sports-collectibles/ref=zg_bs_nav_0 line 2344 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Sports-Collectibles/zgbs/sports-collectibles/ref=zg_bs_nav_0, line 2384: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Tools-Home-Improvement/zgbs/hi/ref=zg_bs_nav_0 line 2343 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Tools-Home-Improvement/zgbs/hi/ref=zg_bs_nav_0, line 2383: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0 line 2259 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0, line 2299: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0 line 2327 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0, line 2367: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Unique-Finds/zgbs/boost/ref=zg_bs_nav_0 line 2272 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Unique-Finds/zgbs/boost/ref=zg_bs_nav_0, line 2312: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0 line 2436 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0, line 2476: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0, line 228: Script terminated by timeout at:
+D/<@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0:228:670
+
+1691987543605	geckodriver	INFO	Listening on 127.0.0.1:62032
+1691987546652	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "6203 ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Brandon\\AppData\\Local\\Temp\\rust_mozprofileQw76q8"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691987546907	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691987546955	Marionette	INFO	Listening on port 62040
+WebDriver BiDi listening on ws://127.0.0.1:62033
+Read port: 62040
+1691987547106	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.error: ({})
+DevTools listening on ws://127.0.0.1:62033/devtools/browser/52cf2c83-d2ef-421d-be75-c7593c4ac622
+JavaScript warning: https://www.amazon.com/Best-Sellers/zgbs line 2483 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers/zgbs, line 2523: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Amazon-Devices-Accessories/zgbs/amazon-devices/ref=zg_bs_nav_0 line 2367 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Amazon-Devices-Accessories/zgbs/amazon-devices/ref=zg_bs_nav_0, line 2407: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_0 line 2319 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_0, line 2359: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Apps-Games/zgbs/mobile-apps/ref=zg_bs_nav_0 line 2338 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Apps-Games/zgbs/mobile-apps/ref=zg_bs_nav_0, line 2378: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0 line 2297 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0, line 2337: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0 line 2365 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_0, line 2405: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_0 line 2356 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_0, line 2396: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_0 line 2383 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_0, line 2423: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_0 line 2395 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_0, line 2435: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_0 line 2403 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_0, line 2443: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-books-Amazon/zgbs/books/ref=zg_bs_nav_0 line 2351 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-books-Amazon/zgbs/books/ref=zg_bs_nav_0, line 2391: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/ref=zg_bs_nav_0 line 2382 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-camera-photo/zgbs/photo/ref=zg_bs_nav_0, line 2422: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-music-albums/zgbs/music/ref=zg_bs_nav_0 line 2367 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-music-albums/zgbs/music/ref=zg_bs_nav_0, line 2407: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Cell-Phones-Accessories/zgbs/wireless/ref=zg_bs_nav_0 line 2358 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Cell-Phones-Accessories/zgbs/wireless/ref=zg_bs_nav_0, line 2398: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Climate-Pledge-Friendly/zgbs/climate-pledge/ref=zg_bs_nav_0 line 2257 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Climate-Pledge-Friendly/zgbs/climate-pledge/ref=zg_bs_nav_0, line 2297: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Clothing-Shoes-Jewelry/zgbs/fashion/ref=zg_bs_nav_0 line 2257 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Clothing-Shoes-Jewelry/zgbs/fashion/ref=zg_bs_nav_0, line 2297: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Collectible-Coins/zgbs/coins/ref=zg_bs_nav_0 line 2302 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Collectible-Coins/zgbs/coins/ref=zg_bs_nav_0, line 2342: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Computers-Accessories/zgbs/pc/ref=zg_bs_nav_0 line 2349 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Computers-Accessories/zgbs/pc/ref=zg_bs_nav_0, line 2389: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0 line 2257 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0, line 2297: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0 line 2257 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0, line 2297: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0 line 2257 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Educational-Resources/zgbs/digital-educational-resources/ref=zg_bs_nav_0, line 2297: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0 line 2501 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0, line 2541: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0 line 2501 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0, line 2541: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0 line 2501 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Digital-Music/zgbs/dmusic/ref=zg_bs_nav_0, line 2541: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/ref=zg_bs_nav_0 line 2383 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/ref=zg_bs_nav_0, line 2423: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Entertainment-Collectibles/zgbs/entertainment-collectibles/ref=zg_bs_nav_0 line 2320 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Entertainment-Collectibles/zgbs/entertainment-collectibles/ref=zg_bs_nav_0, line 2360: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Gift-Cards/zgbs/gift-cards/ref=zg_bs_nav_0 line 2365 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Gift-Cards/zgbs/gift-cards/ref=zg_bs_nav_0, line 2405: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Grocery-Gourmet-Food/zgbs/grocery/ref=zg_bs_nav_0 line 2369 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Grocery-Gourmet-Food/zgbs/grocery/ref=zg_bs_nav_0, line 2409: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Handmade-Products/zgbs/handmade/ref=zg_bs_nav_0 line 2384 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Handmade-Products/zgbs/handmade/ref=zg_bs_nav_0, line 2424: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Health-Household/zgbs/hpc/ref=zg_bs_nav_0 line 2359 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Health-Household/zgbs/hpc/ref=zg_bs_nav_0, line 2399: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0 line 2361 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/ref=zg_bs_nav_0, line 2401: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Industrial-Scientific/zgbs/industrial/ref=zg_bs_nav_0 line 2367 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Industrial-Scientific/zgbs/industrial/ref=zg_bs_nav_0, line 2407: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Kindle-Store/zgbs/digital-text/ref=zg_bs_nav_0 line 2377 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Kindle-Store/zgbs/digital-text/ref=zg_bs_nav_0, line 2417: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Kitchen-Dining/zgbs/kitchen/ref=zg_bs_nav_0 line 2361 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Kitchen-Dining/zgbs/kitchen/ref=zg_bs_nav_0, line 2401: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Magazine-Subscriptions/zgbs/magazines/ref=zg_bs_nav_0 line 2327 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Magazine-Subscriptions/zgbs/magazines/ref=zg_bs_nav_0, line 2367: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-movies-TV-DVD-Blu-ray/zgbs/movies-tv/ref=zg_bs_nav_0 line 2359 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-movies-TV-DVD-Blu-ray/zgbs/movies-tv/ref=zg_bs_nav_0, line 2399: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Musical-Instruments/zgbs/musical-instruments/ref=zg_bs_nav_0 line 2379 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Musical-Instruments/zgbs/musical-instruments/ref=zg_bs_nav_0, line 2419: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Office-Products/zgbs/office-products/ref=zg_bs_nav_0 line 2305 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Office-Products/zgbs/office-products/ref=zg_bs_nav_0, line 2345: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden/zgbs/lawn-garden/ref=zg_bs_nav_0 line 2361 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Patio-Lawn-Garden/zgbs/lawn-garden/ref=zg_bs_nav_0, line 2401: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/ref=zg_bs_nav_0 line 2381 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/ref=zg_bs_nav_0, line 2421: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-software/zgbs/software/ref=zg_bs_nav_0 line 2352 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-software/zgbs/software/ref=zg_bs_nav_0, line 2392: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods/ref=zg_bs_nav_0 line 2351 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods/ref=zg_bs_nav_0, line 2391: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Sports-Collectibles/zgbs/sports-collectibles/ref=zg_bs_nav_0 line 2344 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Sports-Collectibles/zgbs/sports-collectibles/ref=zg_bs_nav_0, line 2384: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Tools-Home-Improvement/zgbs/hi/ref=zg_bs_nav_0 line 2343 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Tools-Home-Improvement/zgbs/hi/ref=zg_bs_nav_0, line 2383: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0 line 2259 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0, line 2299: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0 line 2327 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/ref=zg_bs_nav_0, line 2367: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/Best-Sellers-Unique-Finds/zgbs/boost/ref=zg_bs_nav_0 line 2272 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/Best-Sellers-Unique-Finds/zgbs/boost/ref=zg_bs_nav_0, line 2312: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0 line 2436 > injectedScript, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0, line 2476: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript error: https://m.media-amazon.com/images/I/51AcmceL-rL.js?AUIClients/CardJsRuntimeBuzzCopyBuild, line 32: TypeError: b.cardModuleFactory is not a function
+JavaScript warning: https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0, line 228: Script terminated by timeout at:
+@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0:228:1787
+i/<@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0:210:136
+g@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0:2429:10772
+D/<@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0:228:686
+t.emit@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0:228:1333
+D@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0:228:5655
+D/<@https://www.amazon.com/best-sellers-video-games/zgbs/videogames/ref=zg_bs_nav_0:228:686
+

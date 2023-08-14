@@ -53,8 +53,8 @@ def click_all_range(driver):
 
 def parse_product_name(wait):
     unmodified_name = (wait.until(ec.presence_of_element_located((By.CLASS_NAME, 'productTableDescriptionTitle'))).text
-                       .replace("  ", " | ").replace(" ", " | "))
-    name_parts = unmodified_name.split(' | ', 2)
+                       .replace("  ", " ||| ").replace(" ", " ||| "))
+    name_parts = unmodified_name.split(' ||| ', 2)
     name = name_parts[0]
     print(name)
     rating = float(name_parts[1])
