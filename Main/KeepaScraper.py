@@ -57,12 +57,19 @@ def parse_product_name(wait):
     name_parts = unmodified_name.split(' ||| ', 2)
     name = name_parts[0]
     print(name)
-    rating = float(name_parts[1])
-    s_reviews = ''
-    for char in name_parts[2]:
-        if char.isdigit():
-            s_reviews += str(char)
-    reviews = int(s_reviews)
+    try:
+        rating = float(name_parts[1])
+    except IndexError:
+        rating = None
+
+    try:
+        s_reviews = ''
+        for char in name_parts[2]:
+            if char.isdigit():
+                s_reviews += str(char)
+        reviews = int(s_reviews)
+    except IndexError:
+        reviews = None
     return name, rating, reviews
 
 
