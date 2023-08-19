@@ -20,7 +20,7 @@ def generate_data(num_products):
         # ... add more departments here ...
     ]
 
-    for i in range(1, num_products + 1):
+    for i in range(num_products):
         product_id = i
         rating = round(random.uniform(3.5, 4.8), 1)
         num_reviews = random.randint(0, 80000)

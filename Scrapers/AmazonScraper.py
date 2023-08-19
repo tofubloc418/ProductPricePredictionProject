@@ -59,26 +59,15 @@ def get_product_asins(driver, department, product_asins, amount):
     return new_asins
 
 
-# Appends product links to product_links
-def build_keepa_links(product_asins):
-    product_links = []
-    for asin in product_asins:
-        product_links.append([asin[0], "https://keepa.com/#!product/1-" + asin[1]])
-
-    print("Product links available: " + str(len(product_links)))
-    return product_links
-
-
-def compile_product_urls(driver):
+def compile_products(driver):
     product_asins = []
 
     departments = get_departments(driver)
     time.sleep(2)
     for department in departments:
-        new_asins = get_product_asins(driver, department, product_asins, 11)
+        new_asins = get_product_asins(driver, department, product_asins, 40)
         for asin in new_asins:
             product_asins.append(asin)
         print("Products found: " + str(len(product_asins)) + '\n')
 
-    product_links = build_keepa_links(product_asins)
-    return product_links
+    return product_asins

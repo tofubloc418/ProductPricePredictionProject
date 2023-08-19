@@ -1,4 +1,5 @@
 import time
+import random
 
 import pandas as pd
 from selenium import webdriver
@@ -6,11 +7,12 @@ from selenium.webdriver.firefox.options import Options
 import KeepaScraper
 import AmazonScraper
 from selenium.common.exceptions import TimeoutException
+from KeepaScraper import TooLittleDataException
 
 
 def activate_driver():
     options = Options()
-    # options.add_argument('-headless')
+    options.add_argument('-headless')
     return webdriver.Firefox(options=options)
 
 
@@ -18,31 +20,38 @@ def run():
     driver = activate_driver()
     driver.maximize_window()
     try:
-        product_links = AmazonScraper.compile_product_urls(driver)
+        product_info = AmazonScraper.compile_products(driver)
     except TimeoutException:
         driver.refresh()
-        product_links = AmazonScraper.compile_product_urls(driver)
+        product_info = AmazonScraper.compile_products(driver)
 
-    existing_df = pd.read_csv(r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\raw_data.csv', index_col=0)
-    existing_links = existing_df["Link"].unique()
+    existing_df = pd.read_csv(r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\raw_data.csv')
+    existing_asins = existing_df["ASIN"].unique()
 
-    total_products = len(product_links)
-    products_finished_count = len(existing_links)
+    total_products = len(product_info)
+    products_finished_count = len(existing_asins)
     print("Products detected: " + str(products_finished_count))
-    for product in product_links:
+    for product in random.sample(product_info, len(product_info)):
         department = product[0]
-        link = product[1]
-        if link not in existing_links:
+        asin = product[1]
+        if asin not in existing_asins:
             try:
-                df = KeepaScraper.get_single_product_data_df(driver, link, department)
+                df = KeepaScraper.get_single_product_data_df(driver, asin, department)
                 df.to_csv(r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\raw_data.csv'
                           , mode='a', index=False, header=False)
 
                 products_finished_count += 1
-                print(str(products_finished_count) + ' / ' + str(total_products) + " completed!")
+                print(str(products_finished_count) + ' / ' + str(total_products) + " completed!\n")
 
                 time.sleep(1)
             except TimeoutException:
+                print("No data available\n")
+                pass
+            except TooLittleDataException:
+                print("Too little data!\n")
+                pass
+            except ValueError:
+                print("ValueError: Date out of bounds\n")
                 pass
 
     driver.quit()
@@ -51,7 +60,7 @@ def run():
 def test_run():
     driver = activate_driver()
     driver.maximize_window()
-    KeepaScraper.get_single_product_data_df(driver, 'https://keepa.com/#!product/1-B08C1W5N87', 'test')
+    KeepaScraper.get_single_product_data_df(driver, 'B08C1W5N87', 'test')
 
 
 run()

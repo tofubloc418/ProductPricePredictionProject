@@ -1,5 +1,5 @@
 from selenium import webdriver
-from selenium.common import NoSuchElementException
+from selenium.common import NoSuchElementException, TimeoutException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
@@ -7,8 +7,22 @@ import datetime as dt
 import pandas as pd
 import time
 
+
+class TooLittleDataException(Exception):
+    """Raised when the number of days is less than 800"""
+    pass
+
+
 year = 2023
 previous_date = dt.datetime.today()
+
+
+# Appends product links to product_links
+def build_links(asin):
+    keepa_link = "https://keepa.com/#!product/1-" + asin
+    amazon_link = "https://www.amazon.com/dp/" + asin
+
+    return keepa_link, amazon_link
 
 
 def parse_date(s_date):
@@ -35,19 +49,17 @@ def parse_date(s_date):
     return date
 
 
-def click_useless_lines(driver):
-    amazon = driver.find_element(By.CSS_SELECTOR, 'td[data-type="0"]')
-    amazon.click()
-    used = driver.find_element(By.CSS_SELECTOR, 'td[data-type="2"]')
-    used.click()
-    buy_box = driver.find_element(By.CSS_SELECTOR, 'td[data-type="18"]')
-    buy_box.click()
-    warehouse = driver.find_element(By.CSS_SELECTOR, 'td[data-type="9"]')
-    warehouse.click()
-
-
-def click_all_range(driver):
+def parse_and_click_all_range(driver):
     graph_range = driver.find_elements(By.CSS_SELECTOR, '.legendRange')[-1]
+
+    s_days_of_data = ''
+    for char in graph_range.text:
+        if char.isdigit():
+            s_days_of_data += str(char)
+    days_of_data = int(s_days_of_data)
+
+    if days_of_data < 365:
+        raise TooLittleDataException
     graph_range.click()
 
 
@@ -90,12 +102,12 @@ def get_single_product_data(driver, keepa_link):
     name, rating, reviews = parse_product_name(wait)
 
     # Set range to YEAR or ALL
-    click_all_range(driver)
+    parse_and_click_all_range(driver)
 
     # Move to right most part of graph
-    # action.move_to_element_with_offset(graph, width / 2 - 6, 0).perform()
+    action.move_to_element_with_offset(graph, width / 2 - 6, 0).perform()
     # TESTER
-    action.move_to_element_with_offset(graph, -500, 0).perform()
+    # action.move_to_element_with_offset(graph, -500, 0).perform()
 
     wait = WebDriverWait(driver, 10)
     # Set pace of cursor movement
@@ -148,16 +160,40 @@ def get_single_product_data(driver, keepa_link):
         # Move cursor left
         action.move_by_offset(pace, 0).perform()
 
-    print(data_points_collected)
+    print(str(data_points_collected) + " data points collected.")
     return data
 
 
-def convert_to_df(department, data):
+def get_product_department_tree(driver, department, amazon_link):
+    # Open AMAZON page
+    driver.get(amazon_link)
+    wait = WebDriverWait(driver, 5)
+
+    department_tree = ''
+
+    try:
+        department_branches = wait.until(ec.presence_of_all_elements_located((By.CSS_SELECTOR, ".a-link-normal.a-color-tertiary")))
+        for branch in department_branches:
+            branch_name = branch.text
+            department_tree += branch_name + " > "
+
+        department_tree = department_tree[:-3]
+
+    except TimeoutException:
+        department_tree = department
+
+    return department_tree
+
+
+def convert_to_df(asin, department, department_tree, amazon_link, data):
     df = pd.DataFrame({"Product Name": data[0],
+                       "ASIN": asin,
                        "Rating": data[1],
                        "# of Reviews": data[2],
                        "Department": department,
-                       "Link": data[3],
+                       "Department Tree": department_tree,
+                       "Keepa Link": data[3],
+                       "Amazon Link": amazon_link,
                        "Date": data[4],
                        "$ New": data[5],
                        "$ Amazon": data[6],
@@ -165,11 +201,15 @@ def convert_to_df(department, data):
     return df
 
 
-def get_single_product_data_df(driver, link, department):
+def get_single_product_data_df(driver, asin, department):
     global year
     global previous_date
     year = 2023
     previous_date = dt.datetime.today()
-    data = get_single_product_data(driver, link)
-    df = convert_to_df(department, data)
+
+    keepa_link, amazon_link = build_links(asin)
+    data = get_single_product_data(driver, keepa_link)
+
+    department_tree = get_product_department_tree(driver, department, amazon_link)
+    df = convert_to_df(asin, department, department_tree, amazon_link, data)
     return df

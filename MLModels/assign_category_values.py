@@ -1,12 +1,24 @@
 import pandas as pd
+import random
 import generate_fake_data
 
+random.seed(42)  # For consistency
 
-def products_to_csv():
+
+def get_unique_products():
     df = pd.read_csv(r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\raw_data.csv',
-                     usecols=['Product Name', 'Rating', '# of Reviews', 'Department', 'Link'])
-    df_no_dupes = df.drop_duplicates(subset=['Link'])
+                     usecols=['Product Name', 'ASIN', 'Keepa Link', 'Rating', '# of Reviews', 'Department', 'Department Tree'])
+    df_no_dupes = df.drop_duplicates(subset=['ASIN'])
 
+    num_of_products = len(df_no_dupes)
+    print(str(num_of_products) + " products detected!")
+
+    # Generate random product types
+    product_types = []
+    for i in range(num_of_products):
+        product_types.append(random.randint(0, 3))
+
+    df_no_dupes.loc[:, 'Pricing Pattern'] = product_types
     df_no_dupes.to_csv(r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\knn_data.csv'
                        , mode='a', index=False, header=False)
     return df_no_dupes
@@ -36,6 +48,6 @@ def assign_value(df):
 
 
 def run():
-    initial_df = generate_fake_data.run()
+    initial_df = get_unique_products()
     df = assign_value(initial_df)
     return df
