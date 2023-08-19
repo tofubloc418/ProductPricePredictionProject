@@ -50,17 +50,21 @@ def parse_date(s_date):
 
 
 def parse_and_click_all_range(driver):
-    graph_range = driver.find_elements(By.CSS_SELECTOR, '.legendRange')[-1]
+    try:
+        graph_range = driver.find_elements(By.CSS_SELECTOR, '.legendRange')[-1]
 
-    s_days_of_data = ''
-    for char in graph_range.text:
-        if char.isdigit():
-            s_days_of_data += str(char)
-    days_of_data = int(s_days_of_data)
+        # s_days_of_data = ''
+        # for char in graph_range.text:
+        #     if char.isdigit():
+        #         s_days_of_data += str(char)
+        # days_of_data = int(s_days_of_data)
+        days_of_data = int(graph_range.text.split('(')[1].split(' ')[0])
 
-    if days_of_data < 365:
+        if days_of_data < 365:
+            raise TooLittleDataException
+        graph_range.click()
+    except IndexError:
         raise TooLittleDataException
-    graph_range.click()
 
 
 def parse_product_name(wait):

@@ -9,6 +9,8 @@ import AmazonScraper
 from selenium.common.exceptions import TimeoutException
 from KeepaScraper import TooLittleDataException
 
+random.seed(42)
+
 
 def activate_driver():
     options = Options()
