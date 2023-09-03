@@ -7,12 +7,6 @@ import datetime as dt
 import pandas as pd
 import time
 
-
-class TooLittleDataException(Exception):
-    """Raised when the number of days is less than 800"""
-    pass
-
-
 year = 2023
 previous_date = dt.datetime.today()
 
@@ -50,6 +44,7 @@ def parse_date(s_date):
 
 
 def parse_and_click_all_range(driver):
+    from ScraperScript import TooLittleDataException
     try:
         graph_range = driver.find_elements(By.CSS_SELECTOR, '.legendRange')[-1]
 
@@ -65,6 +60,27 @@ def parse_and_click_all_range(driver):
         graph_range.click()
     except IndexError:
         raise TooLittleDataException
+
+
+def click_price_types(driver):
+    from ScraperScript import new_fba_clicked, new_fma_clicked, set_new_fba_clicked, set_new_fma_clicked
+    new_fba_clicked = new_fba_clicked
+    new_fma_clicked = new_fma_clicked
+
+    if not new_fba_clicked:
+        try:
+            new_fba = driver.find_element(By.CSS_SELECTOR, 'td[data-type="10"]')
+            new_fba.click()
+            set_new_fba_clicked(True)
+        except NoSuchElementException:
+            pass
+    if not new_fma_clicked:
+        try:
+            new_fma = driver.find_element(By.CSS_SELECTOR, 'td[data-type="7"]')
+            new_fma.click()
+            set_new_fma_clicked(True)
+        except NoSuchElementException:
+            pass
 
 
 def parse_product_name(wait):
@@ -91,7 +107,7 @@ def parse_product_name(wait):
 
 def get_single_product_data(driver, keepa_link):
     # TEMPORARY DATA STORAGE
-    data = [[], [], [], [], [], [], [], []]
+    data = [[], [], [], [], [], [], [], [], [], []]
     data_points_collected = 0
 
     # Open KEEPA page
@@ -107,6 +123,9 @@ def get_single_product_data(driver, keepa_link):
 
     # Set range to YEAR or ALL
     parse_and_click_all_range(driver)
+
+    # Click price data types
+    click_price_types(driver)
 
     # Move to right most part of graph
     action.move_to_element_with_offset(graph, width / 2 - 6, 0).perform()
@@ -135,6 +154,18 @@ def get_single_product_data(driver, keepa_link):
             new_price = None
 
         try:
+            s_new_fba_price = driver.find_element(By.ID, 'flotTip10').text
+            new_fba_price = float(s_new_fba_price.split('$ ')[1].replace(',', '')) if '$' in s_new_fba_price else None
+        except NoSuchElementException:
+            new_fba_price = None
+
+        try:
+            s_new_fma_price = driver.find_element(By.ID, 'flotTip7').text
+            new_fma_price = float(s_new_fma_price.split('$ ')[1].replace(',', '')) if '$' in s_new_fma_price else None
+        except NoSuchElementException:
+            new_fma_price = None
+
+        try:
             s_amazon_price = driver.find_element(By.ID, 'flotTip0').text
             amazon_price = float(s_amazon_price.split('$ ')[1].replace(',', '')) if '$' in s_amazon_price else None
         except NoSuchElementException:
@@ -156,9 +187,13 @@ def get_single_product_data(driver, keepa_link):
             data[3].append(keepa_link)
             data[4].append(date)
             data[5].append(new_price)
-            data[6].append(amazon_price)
-            data[7].append(used_price)
-            print(s_date + ' | ' + str(new_price) + " | " + str(amazon_price) + " | " + str(used_price))
+            data[6].append(new_fba_price)
+            data[7].append(new_fma_price)
+            data[8].append(amazon_price)
+            data[9].append(used_price)
+            print(
+                s_date + ' | ' + str(new_price) + " | " + str(new_fba_price) + " | " + str(new_fma_price) + " | " + str(
+                    amazon_price) + " | " + str(used_price))
             data_points_collected += 1
 
         # Move cursor left
@@ -176,7 +211,8 @@ def get_product_department_tree(driver, department, amazon_link):
     department_tree = ''
 
     try:
-        department_branches = wait.until(ec.presence_of_all_elements_located((By.CSS_SELECTOR, ".a-link-normal.a-color-tertiary")))
+        department_branches = wait.until(
+            ec.presence_of_all_elements_located((By.CSS_SELECTOR, ".a-link-normal.a-color-tertiary")))
         for branch in department_branches:
             branch_name = branch.text
             department_tree += branch_name + " > "
@@ -200,8 +236,10 @@ def convert_to_df(asin, department, department_tree, amazon_link, data):
                        "Amazon Link": amazon_link,
                        "Date": data[4],
                        "$ New": data[5],
-                       "$ Amazon": data[6],
-                       "$ Used": data[7]})
+                       "$ New FBA": data[6],
+                       "$ New FMA": data[7],
+                       "$ Amazon": data[8],
+                       "$ Used": data[9]})
     return df
 
 
