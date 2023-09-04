@@ -1,32 +1,9 @@
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
+from os.path import join
 
+from Data import DATA_DIR
+from DataProcessors.parse_raw_data import clean_raw_data
 
-RAW_DATA_NEW_AMZN_USED_PATH = r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\raw_data_new_amzn_used.feather'
-
-
-def merge_price(df):
-    final_prices = []
-
-    for _, row in df.iterrows():
-        amazon_price = row.get('$ Amazon')
-        new_price = row.get('$ New')
-        new_fba_price = row.get('$ New FBA')
-        new_fma_price = row.get('$ New FMA')
-
-        valid_prices = [price for price in [amazon_price, new_fba_price, new_fma_price] if price is not None]
-        if valid_prices and not all(pd.isna(price) for price in valid_prices):
-            final_price = min(valid_prices)
-        elif new_price is not None:
-            final_price = new_price
-        else:
-            final_price = None
-
-        final_prices.append(final_price)
-
-    df['Final Price'] = final_prices
-    return df
+RAW_DATA_NEW_AMZN_USED_PATH = join(DATA_DIR, 'raw_data_new_amzn_used.feather')
 
 
 def set_multi_indexed_data(df):
@@ -37,9 +14,8 @@ def set_multi_indexed_data(df):
     return multi_indexed_data
 
 
-def run():
-    df = pd.read_feather(RAW_DATA_NEW_AMZN_USED_PATH)
-    df_merged_prices = merge_price(df)
+def get_minirocket_training_data():
+    df_cleaned = clean_raw_data(RAW_DATA_NEW_AMZN_USED_PATH)
 
 
-run()
+get_minirocket_training_data()

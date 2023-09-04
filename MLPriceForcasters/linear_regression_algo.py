@@ -1,10 +1,10 @@
 
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 
-from DataProcessors import parse_raw_data, pricing_data_processor
+import DataProcessors.processor_scripts
+from DataProcessors import pricing_data_processor
 
 
 def linear_regression_test(df):
@@ -28,7 +28,7 @@ def linear_regression_test(df):
 
 
 def run_test():
-    training_data = parse_raw_data.get_training_unique_products_data()
+    training_data = DataProcessors.processor_scripts.get_training_unique_products_data()
     for _, product in training_data.iterrows():
         if product['Pricing Pattern'] == 'Flat' or product['Pricing Pattern'] == 'Trendy':
             asin = product['ASIN']

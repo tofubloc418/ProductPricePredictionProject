@@ -1,11 +1,11 @@
 import math
 
-from DataProcessors import parse_raw_data
-
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.preprocessing import StandardScaler
+
+import DataProcessors.processor_scripts
 
 
 def knn_test(df):
@@ -44,7 +44,7 @@ def knn_test(df):
 
 
 def run():
-    training_df = parse_raw_data.get_training_unique_products_data()
+    training_df = DataProcessors.processor_scripts.get_training_unique_products_data()
 
     knn_test(training_df)
 

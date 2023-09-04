@@ -1,16 +1,20 @@
 import os
-import time
 import random
+import time
+from os.path import join
 
 import pandas as pd
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
-import AmazonScraper
-from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import StaleElementReferenceException
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.firefox.options import Options
+
+import AmazonScraper
+from Data import DATA_DIR
+
+RAW_DATA_PATH = join(DATA_DIR, 'raw_data.feather')
 
 
-RAW_DATA_PATH = r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\raw_data.feather'
 class TooLittleDataException(Exception):
     """Raised when the number of days is less than 800"""
     pass

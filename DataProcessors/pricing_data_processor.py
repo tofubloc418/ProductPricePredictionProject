@@ -1,10 +1,13 @@
+from os.path import join
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 
+from Data import DATA_DIR
 from DataProcessors.parse_raw_data import merge_prices
 
-RAW_DATA_NEW_AMZN_USED_PATH = r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\raw_data_new_amzn_used.feather'
+RAW_DATA_NEW_AMZN_USED_PATH = join(DATA_DIR, 'raw_data_new_amzn_used.feather')
 
 
 def get_product_data(file, asin):
@@ -72,3 +75,14 @@ def run(asin):
     standard_deviation = calculate_standard_deviation(merged_prices_df)
 
     return merged_prices_df, delta_median, standard_deviation
+
+
+def add_stats_data(df):
+    for index, row in df.iterrows():
+        print(f'Adding stats to {row["Product Name"]}')
+        product_asin = row['ASIN']
+        _, delta_median, std = run(product_asin)
+        df.at[index, 'Delta Median'] = delta_median
+        df.at[index, 'Standard Deviation'] = std
+
+    return df

@@ -1,40 +1,31 @@
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import train_test_split
-from tsai.basics import *
-import sktime
-import sklearn
+import numpy as np
+from sklearn.linear_model import RidgeClassifierCV
+from sklearn.preprocessing import StandardScaler
 
-from tsai.models.MINIROCKET import *
-from sktime.transformations.panel.rocket import MiniRocket
+from sktime.datasets import load_arrow_head  # univariate dataset
+from sktime.transformations.panel.rocket import (
+    MiniRocket,
+)
 
 
-def mini_rocket_test(df):
-    features = []
+def minirocket_test(df):
+    # get data
+    #
 
-    for asin, group in df.groupby('ASIN'):
-        X = group['Final Price'].values  # Extract price time series for the product
-        X = X.reshape(1, -1)
+    minirocket = MiniRocket()
+    minirocket.fit(X_train)
+    X_train_transform = minirocket.transform(X_train)
+    # test shape of transformed training data
+    X_train_transform.shape
 
-        # Create and fit MiniRocket
-        transformer = MiniRocket()
-        X_features = transformer.fit_transform(X)
+    scaler = StandardScaler(with_mean=False)
+    classifier = RidgeClassifierCV(alphas=np.logspace(-3, 3, 10))
 
-        features.append(X_features)
+    X_train_scaled_transform = scaler.fit_transform(X_train_transform)
+    classifier.fit(X_train_scaled_transform, y_train)
 
-    # Stack features and labels
-    X_all_features = np.vstack(features)
-    y_all_labels = np.array(labels)
+    X_test, y_test = load_arrow_head(split="test", return_X_y=True)
+    X_test_transform = minirocket.transform(X_test)
 
-    # Split data into training and testing sets
-    from sklearn.model_selection import train_test_split
-
-    X_train, X_test, y_train, y_test = train_test_split(
-        X_all_features, y_all_labels, test_size=0.2, random_state=42
-    )
-
-    # Create and train MiniRocketClassifier
-    classifier = MiniRocketClassifier()
-    classifier.fit(X_train, y_train)
-
-    # Make predictions
-    y_pred = classifier.predict(X_test)
+    X_test_scaled_transform = scaler.transform(X_test_transform)
+    classifier.score(X_test_scaled_transform, y_test)
