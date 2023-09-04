@@ -1,15 +1,18 @@
+from os.path import join
+
 import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
+from Data import DATA_DIR
 from DataProcessors import parse_raw_data
 
 from sklearn.ensemble import HistGradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
-CLASSIFICATION_TRAINING_DATA_WITH_PREDICTIONS_PATH = r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\classification_training_data_with_predictions.feather'
+CLASSIFICATION_TRAINING_DATA_WITH_PREDICTIONS_PATH = join(DATA_DIR, "classification_training_data_with_predictions.feather")
 
 
 def save_predictions(df, filename):
@@ -45,7 +48,6 @@ def hgb_test(df):
     print("Accuracy:", accuracy)
 
     # Save predictions to dataframe
-    df['Predicted Pricing Pattern'] = np.nan
     df.loc[X_test.index, 'Predicted Pricing Pattern'] = y_pred
 
     return df
@@ -108,7 +110,7 @@ def kmeans_test(df):
 
 
 def run():
-    training_df = parse_raw_data.get_training_data()
+    training_df = parse_raw_data.get_training_unique_products_data()
 
     df = hgb_test(training_df)
     save_predictions(df, CLASSIFICATION_TRAINING_DATA_WITH_PREDICTIONS_PATH)

@@ -1,9 +1,13 @@
+from os.path import join
+
 import pandas as pd
+
+from Data import DATA_DIR
 from DataProcessors import pricing_data_processor
 
 KNN_DATA_PATH = r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\knn_data.feather'
 KNN_DATA_TEMP_PATH = r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\knn_data_temp.feather'
-KNN_TRAINING_DATA_PATH = r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\knn_training_data.feather'
+KNN_TRAINING_DATA_PATH = join(DATA_DIR, "knn_training_data.feather")
 RAW_DATA_NEW_AMZN_USED_PATH = r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\raw_data_new_amzn_used.feather'
 
 
@@ -20,7 +24,20 @@ def get_unique_products():
     return df_unique_products
 
 
-def clean_raw_data(filename):
+def merge_prices(df):
+    df_prices = df[['$ Amazon', '$ New FBA', '$ New FMA']]
+    df['Prices'] = df_prices.min(axis=1)
+    return df
+
+
+def fill_null_values(df):
+    # Forward filling
+    df.fillna(method='ffill', inplace=True)
+    return df
+
+
+def remove_bad_products(filename):
+    # Removes products with more than 50% null
     df = pd.read_feather(filename, index_col=None)
     unique_asins = df['ASIN'].unique()
 
@@ -109,7 +126,7 @@ def create_knn_df():
     return knn_df
 
 
-def get_new_data():
+def get_new_unique_products_data():
     knn_df = pd.read_feather(KNN_DATA_PATH)
     new_products_df = pd.DataFrame()
     for _, row in knn_df.iterrows():
@@ -120,7 +137,7 @@ def get_new_data():
     return new_products_df
 
 
-def get_training_data():
+def get_training_unique_products_data():
     knn_df = pd.read_feather(KNN_TRAINING_DATA_PATH)
     training_products_df = pd.DataFrame()
     for _, row in knn_df.iterrows():
@@ -134,3 +151,11 @@ def get_training_data():
 def copy_temp_knn_data_to_knn_data():
     df = pd.read_feather(KNN_DATA_TEMP_PATH)
     df.to_feather(KNN_DATA_PATH)
+
+
+def clean_raw_data(file):
+    df_og = pd.read_feather(file)
+    df_merged = merge_prices(df_og)
+    df_filled = fill_null_values(df_merged)
+
+    return df_filled

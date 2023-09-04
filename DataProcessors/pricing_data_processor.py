@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+from DataProcessors.parse_raw_data import merge_prices
 
 RAW_DATA_NEW_AMZN_USED_PATH = r'C:\Users\Brandon\PycharmProjects\ProductPricePredictionProject\Data\raw_data_new_amzn_used.feather'
 
@@ -12,26 +13,6 @@ def get_product_data(file, asin):
     if product_df.empty:
         print(f"ERROR: {asin} found no product.")
     return product_df
-
-
-def merge_price(df):
-    final_prices = []
-
-    for _, row in df.iterrows():
-        amazon_price = row.get('$ Amazon')
-        new_fba_price = row.get('$ New FBA')
-        new_fma_price = row.get('$ New FMA')
-
-        valid_prices = [price for price in [amazon_price, new_fba_price, new_fma_price] if price is not None]
-        if valid_prices and not all(pd.isna(price) for price in valid_prices):
-            final_price = min(valid_prices)
-        else:
-            final_price = None
-
-        final_prices.append(final_price)
-
-    df['Final Price'] = final_prices
-    return df
 
 
 def calculate_delta_median(df):
@@ -85,7 +66,7 @@ def visualize_data(df):
 
 def run(asin):
     df = get_product_data(RAW_DATA_NEW_AMZN_USED_PATH, asin)
-    merged_prices_df = merge_price(df)
+    merged_prices_df = merge_prices(df)
 
     delta_median = calculate_delta_median(merged_prices_df)
     standard_deviation = calculate_standard_deviation(merged_prices_df)

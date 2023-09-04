@@ -28,7 +28,7 @@ def linear_regression_test(df):
 
 
 def run_test():
-    training_data = parse_raw_data.get_training_data()
+    training_data = parse_raw_data.get_training_unique_products_data()
     for _, product in training_data.iterrows():
         if product['Pricing Pattern'] == 'Flat' or product['Pricing Pattern'] == 'Trendy':
             asin = product['ASIN']

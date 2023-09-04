@@ -44,7 +44,7 @@ def knn_test(df):
 
 
 def run():
-    training_df = parse_raw_data.get_training_data()
+    training_df = parse_raw_data.get_training_unique_products_data()
 
     knn_test(training_df)
 
