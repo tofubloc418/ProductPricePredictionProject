@@ -109,7 +109,7 @@ def kmeans_test(df):
 
 
 def run():
-    training_df = DataProcessors.processor_scripts.get_training_unique_products_data()
+    training_df = DataProcessors.processor_scripts.get_training_unique_products_data_for_classifiers()
 
     df = hgb_test(training_df)
     save_predictions(df, CLASSIFICATION_TRAINING_DATA_WITH_PREDICTIONS_PATH)

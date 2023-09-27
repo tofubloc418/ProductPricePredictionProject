@@ -44,7 +44,7 @@ def knn_test(df):
 
 
 def run():
-    training_df = DataProcessors.processor_scripts.get_training_unique_products_data()
+    training_df = DataProcessors.processor_scripts.get_training_unique_products_data_for_classifiers()
 
     knn_test(training_df)
 

@@ -67,16 +67,6 @@ def visualize_data(df):
     plt.show()
 
 
-def run(asin):
-    df = get_product_data(RAW_DATA_NEW_AMZN_USED_PATH, asin)
-    merged_prices_df = merge_prices(df)
-
-    delta_median = calculate_delta_median(merged_prices_df)
-    standard_deviation = calculate_standard_deviation(merged_prices_df)
-
-    return merged_prices_df, delta_median, standard_deviation
-
-
 def add_stats_data(df):
     for index, row in df.iterrows():
         print(f'Adding stats to {row["Product Name"]}')
@@ -86,3 +76,13 @@ def add_stats_data(df):
         df.at[index, 'Standard Deviation'] = std
 
     return df
+
+
+def run(asin):
+    df = get_product_data(RAW_DATA_NEW_AMZN_USED_PATH, asin)
+    merged_prices_df = merge_prices(df)
+
+    delta_median = calculate_delta_median(merged_prices_df)
+    standard_deviation = calculate_standard_deviation(merged_prices_df)
+
+    return merged_prices_df, delta_median, standard_deviation
